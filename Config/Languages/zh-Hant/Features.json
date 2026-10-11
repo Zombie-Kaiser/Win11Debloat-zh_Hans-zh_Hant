@@ -1,0 +1,744 @@
+{
+  "Features": {
+    "RemoveApps": {
+      "Label": "移除透過 'Apps' 參數指定的應用程式",
+      "ApplyText": "正在移除所選應用程式"
+    },
+    "Apps": {
+      "Label": "要移除的應用程式選擇，以逗號分隔清單指定。使用 'Default'（或省略）以使用預設應用程式清單",
+      "ApplyText": "正在移除所選應用程式"
+    },
+    "RemoveGamingApps": {
+      "Label": "移除 Xbox 應用程式和 Xbox Game Bar",
+      "ApplyText": "正在移除遊戲相關應用程式"
+    },
+    "RemoveHPApps": {
+      "Label": "移除 HP OEM 應用程式",
+      "ApplyText": "正在移除 HP 應用程式"
+    },
+    "CreateRestorePoint": {
+      "Label": "建立系統還原點",
+      "ApplyText": "正在建立系統還原點"
+    },
+    "DisableTelemetry": {
+      "Label": "停用遙測、追蹤和定向廣告",
+      "ToolTip": "此設定停用遙測、診斷資料收集、活動歷史記錄、應用程式啟動追蹤、定向廣告等。它限制了傳送到 Microsoft 的有關您裝置和使用情況的資料。如果您是 Windows 測試人員，在重新開啟選用診斷資料收集之前，更新可能會被阻止。",
+      "ApplyText": "正在停用遙測和診斷資料收集",
+      "UndoLabel": "啟用遙測、追蹤和定向廣告",
+      "ApplyUndoText": "正在啟用遙測和診斷資料收集"
+    },
+    "DisableSuggestions": {
+      "Label": "停用 Windows 中的提示、技巧和建議內容",
+      "ToolTip": "此設定移除 Windows 中許多惱人的干擾項，包括通知、提醒和同步提供者廣告，還阻止自動安裝建議的應用程式。",
+      "ApplyText": "正在停用 Windows 中的提示、技巧、建議和廣告",
+      "UndoLabel": "啟用 Windows 中的提示、技巧和建議內容",
+      "ApplyUndoText": "正在啟用 Windows 中的提示、技巧、建議和廣告"
+    },
+    "DisableNotifications": {
+      "Label": "停用 Windows 通知（來自應用程式和其他傳送者）",
+      "ToolTip": "停用來自應用程式和其他傳送者的原生 Windows 通知，包括來自 Discord、WhatsApp、Teams 和 Slack 等應用程式的通知。",
+      "ApplyText": "正在停用 Windows 通知和提醒",
+      "UndoLabel": "啟用 Windows 通知和提醒",
+      "ApplyUndoText": "正在啟用 Windows 通知和提醒"
+    },
+    "DisableLocationServices": {
+      "Label": "停用 Windows 定位服務和應用程式位置存取",
+      "ToolTip": "這將關閉 Windows 定位服務並拒絕應用程式存取您的位置。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用 Windows 定位服務和應用程式位置存取",
+      "UndoLabel": "啟用 Windows 定位服務和應用程式位置存取",
+      "ApplyUndoText": "正在啟用 Windows 定位服務和應用程式位置存取"
+    },
+    "DisableFindMyDevice": {
+      "Label": "停用「尋找我的裝置」位置追蹤",
+      "ToolTip": "這將關閉「尋找我的裝置」功能，該功能會定期將您的裝置位置傳送到 Microsoft。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用「尋找我的裝置」位置追蹤",
+      "UndoLabel": "啟用「尋找我的裝置」位置追蹤",
+      "ApplyUndoText": "正在啟用「尋找我的裝置」位置追蹤"
+    },
+    "DisableLockscreenTips": {
+      "Label": "停用鎖定畫面上的提示和技巧",
+      "ToolTip": "這將關閉鎖定畫面的聚光燈選項，並停用鎖定畫面上出現的提示、技巧和趣味知識。",
+      "ApplyText": "正在停用鎖定畫面上的提示和技巧",
+      "UndoLabel": "啟用鎖定畫面上的提示和技巧",
+      "ApplyUndoText": "正在啟用鎖定畫面上的提示和技巧"
+    },
+    "EnableDesktopSpotlight": {
+      "Label": "啟用 Windows 聚光燈桌布背景和捷徑",
+      "ToolTip": "恢復 Windows 聚光燈桌布背景和「了解此圖片」捷徑。",
+      "ApplyText": "正在恢復 Windows 聚光燈桌布背景和捷徑"
+    },
+    "DisableDesktopSpotlight": {
+      "Label": "停用 Windows 聚光燈桌布背景",
+      "ToolTip": "關閉桌布背景的 Windows 聚光燈功能，該功能顯示輪替圖片並可能顯示提示和趣味知識。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用 Windows 聚光燈桌布背景",
+      "UndoLabel": "啟用 Windows 聚光燈桌布背景",
+      "ApplyUndoText": "正在恢復 Windows 聚光燈桌布背景和捷徑"
+    },
+    "HideDesktopSpotlightIcon": {
+      "Label": "隱藏「了解此圖片」桌面捷徑",
+      "ToolTip": "隱藏「了解此圖片」桌面捷徑，同時保持 Windows 聚光燈桌布輪替啟用。它不會停用 Windows 聚光燈。",
+      "ApplyText": "正在隱藏 Windows 聚光燈「了解此圖片」桌面捷徑",
+      "UndoLabel": "顯示「了解此圖片」桌面捷徑",
+      "ApplyUndoText": "正在顯示 Windows 聚光燈「了解此圖片」桌面捷徑"
+    },
+    "DisableEdgeAds": {
+      "Label": "停用 Edge 中的廣告、建議和新聞來源",
+      "ToolTip": "這將關閉 Microsoft Edge 中的各種干擾項，如廣告、建議和 MSN 新聞來源。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用 Microsoft Edge 中的廣告、建議和 MSN 新聞來源",
+      "UndoLabel": "啟用 Edge 中的廣告、建議和新聞來源",
+      "ApplyUndoText": "正在啟用 Microsoft Edge 中的廣告、建議和 MSN 新聞來源"
+    },
+    "DisableCopilot": {
+      "Label": "停用 Microsoft Copilot",
+      "ToolTip": "這將停用並解除安裝 Microsoft Copilot，Windows 內建的 AI 助手。",
+      "ApplyText": "正在停用 Microsoft Copilot",
+      "UndoLabel": "啟用 Microsoft Copilot",
+      "ApplyUndoText": "正在啟用 Microsoft Copilot"
+    },
+    "DisableRecall": {
+      "Label": "停用 Windows Recall",
+      "ToolTip": "這將停用 Windows Recall，這是一項 AI 驅動的功能，可快速存取最近使用的檔案、應用程式和活動。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用 Windows Recall",
+      "UndoLabel": "啟用 Windows Recall",
+      "ApplyUndoText": "正在啟用 Windows Recall"
+    },
+    "DisableClickToDo": {
+      "Label": "停用 Click To Do、AI 文字和圖像分析",
+      "ToolTip": "這將停用 Click To Do，它提供 Windows 中 AI 驅動的文字和圖像分析功能。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用 Click to Do",
+      "UndoLabel": "啟用 Click To Do、AI 文字和圖像分析",
+      "ApplyUndoText": "正在啟用 Click to Do"
+    },
+    "DisableAISvcAutoStart": {
+      "Label": "阻止 AI 服務自動啟動",
+      "ToolTip": "這將把 WSAIFabricSvc 服務設定為手動啟動，防止該服務隨 Windows 自動啟動。",
+      "ApplyText": "正在阻止 AI 服務自動啟動",
+      "UndoLabel": "允許 AI 服務自動啟動",
+      "ApplyUndoText": "正在允許 AI 服務自動啟動"
+    },
+    "DisableDVR": {
+      "Label": "停用 Xbox 遊戲/螢幕錄製",
+      "ToolTip": "這將停用 Game Bar 應用程式中包含的 Xbox 遊戲/螢幕錄製功能。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用 Xbox 遊戲/螢幕錄製",
+      "UndoLabel": "啟用 Xbox 遊戲/螢幕錄製",
+      "ApplyUndoText": "正在啟用 Xbox 遊戲/螢幕錄製"
+    },
+    "DisableGameBarIntegration": {
+      "Label": "停用 Game Bar 整合",
+      "ToolTip": "這將停用 Game Bar 與遊戲和控制器的整合。可停止啟動遊戲或連接控制器時惱人的 ms-gamebar 彈窗。",
+      "ApplyText": "正在停用 Game Bar 整合",
+      "UndoLabel": "啟用 Game Bar 整合",
+      "ApplyUndoText": "正在啟用 Game Bar 整合"
+    },
+    "ClearStart": {
+      "Label": "僅為此使用者移除開始功能表中的所有固定應用程式",
+      "ApplyText": "正在移除開始功能表中的所有固定應用程式"
+    },
+    "ClearStartAllUsers": {
+      "Label": "為所有現有和新使用者移除開始功能表中的所有固定應用程式",
+      "ApplyText": "正在為所有使用者移除開始功能表中的所有固定應用程式"
+    },
+    "ReplaceStart": {
+      "Label": "僅為此使用者使用提供的範本檔案取代開始功能表版面配置",
+      "ApplyText": "正在取代開始功能表"
+    },
+    "ReplaceStartAllUsers": {
+      "Label": "為所有現有和新使用者使用提供的範本檔案取代開始功能表版面配置",
+      "ApplyText": "正在為所有使用者取代開始功能表"
+    },
+    "DisableStartRecommended": {
+      "Label": "隱藏開始功能表中的推薦部分",
+      "ToolTip": "這將隱藏開始功能表中的推薦部分，該部分顯示最近新增的應用程式、最近開啟的檔案和應用程式推薦。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用開始功能表推薦部分",
+      "UndoLabel": "顯示開始功能表中的推薦部分",
+      "ApplyUndoText": "正在啟用開始功能表推薦部分"
+    },
+    "DisableStartAllApps": {
+      "Label": "隱藏開始功能表中的「所有應用程式」部分",
+      "ToolTip": "這將隱藏開始功能表中的「所有應用程式」部分，該部分顯示所有已安裝的應用程式。警告：隱藏此部分可能使尋找已安裝應用程式變得困難。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用開始功能表中的「所有應用程式」部分",
+      "UndoLabel": "顯示開始功能表中的「所有應用程式」部分",
+      "ApplyUndoText": "正在啟用開始功能表中的「所有應用程式」部分"
+    },
+    "DisableStartPhoneLink": {
+      "Label": "停用開始功能表中的手機連結整合",
+      "ToolTip": "當您有行動裝置連接到電腦時，這將移除開始功能表中的手機連結整合。",
+      "ApplyText": "正在停用開始功能表中的手機連結整合",
+      "UndoLabel": "啟用開始功能表中的手機連結整合",
+      "ApplyUndoText": "正在啟用開始功能表中的手機連結整合"
+    },
+    "DisableBing": {
+      "Label": "停用搜尋中的 Bing 網頁搜尋和 Copilot 整合",
+      "ToolTip": "這將關閉 Windows 搜尋體驗中的 Bing 網頁搜尋結果和 Copilot 整合。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用 Windows 搜尋中的 Bing 網頁搜尋和 Copilot 整合",
+      "UndoLabel": "啟用搜尋中的 Bing 網頁搜尋和 Copilot 整合",
+      "ApplyUndoText": "正在啟用 Windows 搜尋中的 Bing 網頁搜尋和 Copilot 整合"
+    },
+    "DisableStoreSearchSuggestions": {
+      "Label": "停用搜尋中的 Microsoft Store 應用程式建議",
+      "ToolTip": "這將停用 Windows 搜尋中的 Microsoft Store 應用程式建議。",
+      "ApplyText": "正在停用搜尋中的 Microsoft Store 應用程式建議",
+      "UndoLabel": "啟用搜尋中的 Microsoft Store 應用程式建議",
+      "ApplyUndoText": "正在啟用搜尋中的 Microsoft Store 應用程式建議"
+    },
+    "DisableSettings365Ads": {
+      "Label": "隱藏設定首頁中的 Microsoft 365 Copilot 廣告",
+      "ToolTip": "這將關閉設定首頁中出現的 Microsoft 365 Copilot 廣告。",
+      "ApplyText": "正在停用設定首頁中的 Microsoft 365 Copilot 廣告",
+      "UndoLabel": "顯示設定首頁中的 Microsoft 365 Copilot 廣告",
+      "ApplyUndoText": "正在啟用設定首頁中的 Microsoft 365 Copilot 廣告"
+    },
+    "DisableSettingsHome": {
+      "Label": "隱藏設定「首頁」頁面",
+      "ToolTip": "從設定應用程式中移除「首頁」頁面。",
+      "ApplyText": "正在停用設定首頁",
+      "UndoLabel": "顯示設定「首頁」頁面",
+      "ApplyUndoText": "正在啟用設定首頁"
+    },
+    "DisableEdgeAI": {
+      "Label": "停用 Microsoft Edge 中的 AI 功能",
+      "ToolTip": "這將關閉 Microsoft Edge 中的 AI 功能，如 AI 驅動的側邊欄和 Copilot 功能。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用 Microsoft Edge 中的 AI 功能",
+      "UndoLabel": "啟用 Microsoft Edge 中的 AI 功能",
+      "ApplyUndoText": "正在啟用 Microsoft Edge 中的 AI 功能"
+    },
+    "DisablePaintAI": {
+      "Label": "停用小畫家中的 AI 功能",
+      "ToolTip": "這將關閉小畫家中的 AI 功能，如 AI 驅動的圖像生成和編輯工具。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用小畫家中的 AI 功能",
+      "UndoLabel": "啟用小畫家中的 AI 功能",
+      "ApplyUndoText": "正在啟用小畫家中的 AI 功能"
+    },
+    "DisableNotepadAI": {
+      "Label": "停用記事本中的 AI 功能",
+      "ToolTip": "這將關閉記事本中的 AI 功能，如 AI 驅動的寫作建議。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用記事本中的 AI 功能",
+      "UndoLabel": "啟用記事本中的 AI 功能",
+      "ApplyUndoText": "正在啟用記事本中的 AI 功能"
+    },
+    "EnableDarkMode": {
+      "Label": "為系統和應用程式啟用深色主題",
+      "ToolTip": "這將把應用程式和系統主題設定為深色模式。",
+      "ApplyText": "正在為系統和應用程式啟用深色模式",
+      "UndoLabel": "為系統和應用程式停用深色主題",
+      "ApplyUndoText": "正在為系統和應用程式停用深色模式"
+    },
+    "DisableDragTray": {
+      "Label": "停用用於共用和移動檔案的「拖曳列」",
+      "ToolTip": "拖曳列是 Windows 11 中用於共用和移動檔案的新功能，在拖曳檔案時出現在螢幕頂部。",
+      "ApplyText": "正在停用拖曳列",
+      "UndoLabel": "啟用用於共用和移動檔案的「拖曳列」",
+      "ApplyUndoText": "正在啟用拖曳列"
+    },
+    "RevertContextMenu": {
+      "Label": "使用傳統 Windows 10 右鍵功能表樣式",
+      "ToolTip": "這將恢復傳統 Windows 10 樣式的右鍵功能表，通常隱藏在 Windows 11 新右鍵功能表的「顯示更多選項」項目後面。",
+      "ApplyText": "正在恢復傳統 Windows 10 樣式右鍵功能表",
+      "UndoLabel": "使用 Windows 11 右鍵功能表樣式",
+      "ApplyUndoText": "正在恢復 Windows 11 樣式右鍵功能表"
+    },
+    "DisableMouseAcceleration": {
+      "Label": "停用「提高指標精確度」（滑鼠加速）",
+      "ToolTip": "這將停用 Windows 中預設啟用的滑鼠加速，使滑鼠移動更加一致和可預測。",
+      "ApplyText": "正在關閉「提高指標精確度」",
+      "UndoLabel": "啟用「提高指標精確度」（滑鼠加速）",
+      "ApplyUndoText": "正在開啟「提高指標精確度」"
+    },
+    "DisableStickyKeys": {
+      "Label": "停用黏滯鍵快速鍵（連按 5 次 Shift）",
+      "ToolTip": "這將防止連續按 5 次 Shift 鍵時出現黏滯鍵對話方塊。",
+      "ApplyText": "正在停用黏滯鍵快速鍵",
+      "UndoLabel": "啟用黏滯鍵快速鍵（連按 5 次 Shift）",
+      "ApplyUndoText": "正在啟用黏滯鍵快速鍵"
+    },
+    "DisableWindowSnapping": {
+      "Label": "停用視窗貼齊",
+      "ToolTip": "這將關閉將視窗貼齊到螢幕邊緣或角落的功能。",
+      "ApplyText": "正在停用視窗貼齊",
+      "UndoLabel": "啟用視窗貼齊",
+      "ApplyUndoText": "正在啟用視窗貼齊"
+    },
+    "DisableSnapAssist": {
+      "Label": "停用貼齊視窗時顯示應用程式建議",
+      "ToolTip": "這將關閉將視窗貼齊到螢幕邊緣或角落時的應用程式建議。",
+      "ApplyText": "正在停用貼齊助手建議",
+      "UndoLabel": "啟用貼齊視窗時顯示應用程式建議",
+      "ApplyUndoText": "正在啟用貼齊助手建議"
+    },
+    "DisableSnapLayouts": {
+      "Label": "隱藏螢幕頂部和最大化按鈕上的貼齊版面配置浮出控件",
+      "ToolTip": "這將關閉懸停在最大化按鈕上或將視窗拖到螢幕頂部時出現的貼齊版面配置浮出控件。",
+      "ApplyText": "正在隱藏將視窗拖到螢幕頂部和最大化按鈕上的貼齊版面配置",
+      "UndoLabel": "顯示螢幕頂部和最大化按鈕上的貼齊版面配置浮出控件",
+      "ApplyUndoText": "正在顯示將視窗拖到螢幕頂部和最大化按鈕上的貼齊版面配置"
+    },
+    "HideTabsInAltTab": {
+      "Label": "在貼齊或按 Alt+Tab 時隱藏應用程式分頁",
+      "ApplyText": "正在停用貼齊或按 Alt+Tab 時顯示應用程式分頁"
+    },
+    "Show3TabsInAltTab": {
+      "Label": "在貼齊或按 Alt+Tab 時顯示 3 個應用程式分頁",
+      "ApplyText": "正在啟用貼齊或按 Alt+Tab 時顯示 3 個應用程式分頁"
+    },
+    "Show5TabsInAltTab": {
+      "Label": "在貼齊或按 Alt+Tab 時顯示 5 個應用程式分頁",
+      "ApplyText": "正在啟用貼齊或按 Alt+Tab 時顯示 5 個應用程式分頁"
+    },
+    "Show20TabsInAltTab": {
+      "Label": "在貼齊或按 Alt+Tab 時顯示 20 個應用程式分頁",
+      "ApplyText": "正在啟用貼齊或按 Alt+Tab 時顯示 20 個應用程式分頁"
+    },
+    "TaskbarAlignLeft": {
+      "Label": "將工作列靠左對齊",
+      "ToolTip": "預設情況下，Windows 11 的工作列按鈕置中。啟用此設定會將工作列按鈕移到左側，類似於之前版本的 Windows。",
+      "ApplyText": "正在將工作列按鈕靠左對齊",
+      "UndoLabel": "將工作列置中對齊",
+      "ApplyUndoText": "正在將工作列按鈕置中對齊"
+    },
+    "HideSearchTb": {
+      "Label": "隱藏工作列上的搜尋圖示",
+      "ApplyText": "正在隱藏工作列上的搜尋圖示",
+      "UndoLabel": "在工作列上顯示搜尋框",
+      "ApplyUndoText": "正在將工作列搜尋改為搜尋框"
+    },
+    "ShowSearchIconTb": {
+      "Label": "在工作列上顯示搜尋圖示",
+      "ApplyText": "正在將工作列搜尋改為僅圖示",
+      "UndoLabel": "在工作列上顯示搜尋框",
+      "ApplyUndoText": "正在將工作列搜尋改為搜尋框"
+    },
+    "ShowSearchLabelTb": {
+      "Label": "在工作列上顯示帶標籤的搜尋圖示",
+      "ApplyText": "正在將工作列搜尋改為帶標籤的圖示",
+      "UndoLabel": "在工作列上顯示搜尋框",
+      "ApplyUndoText": "正在將工作列搜尋改為搜尋框"
+    },
+    "ShowSearchBoxTb": {
+      "Label": "在工作列上顯示搜尋框",
+      "ApplyText": "正在將工作列搜尋改為搜尋框"
+    },
+    "HideTaskview": {
+      "Label": "隱藏工作列上的「工作檢視」按鈕",
+      "ToolTip": "這將停用工作列上的「工作檢視」按鈕，該按鈕可檢視所有開啟的視窗和虛擬桌面。",
+      "ApplyText": "正在隱藏工作列上的工作檢視按鈕",
+      "UndoLabel": "顯示工作列上的「工作檢視」按鈕",
+      "ApplyUndoText": "正在顯示工作列上的工作檢視按鈕"
+    },
+    "DisableWidgets": {
+      "Label": "停用工作列和鎖定畫面上的小工具",
+      "ToolTip": "這將停用 Windows 中的小工具功能，包括工作列上的小工具按鈕和鎖定畫面上可顯示的小工具。",
+      "ApplyText": "正在停用工作列和鎖定畫面上的小工具"
+    },
+    "HideChat": {
+      "Label": "隱藏工作列上的聊天（立即開會）圖示",
+      "ToolTip": "這將停用工作列上的聊天（立即開會）圖示。",
+      "ApplyText": "正在隱藏工作列上的聊天圖示",
+      "UndoLabel": "顯示工作列上的聊天（立即開會）圖示",
+      "ApplyUndoText": "正在顯示工作列上的聊天圖示"
+    },
+    "DisableStorageSense": {
+      "Label": "停用儲存空間感知自動磁碟清理",
+      "ToolTip": "這將停用儲存空間感知，該功能透過刪除暫存檔案、清空資源回收筒和清理下載資料夾中的檔案來自動釋放磁碟空間。",
+      "ApplyText": "正在停用儲存空間感知自動磁碟清理",
+      "UndoLabel": "啟用儲存空間感知自動磁碟清理",
+      "ApplyUndoText": "正在啟用儲存空間感知自動磁碟清理"
+    },
+    "DisableFastStartup": {
+      "Label": "停用快速啟動",
+      "ToolTip": "快速啟動透過將系統映像儲存到磁碟來幫助電腦在關機後更快啟動。停用快速啟動有助於解決某些問題，但可能導致啟動時間略長。",
+      "ApplyText": "正在停用快速啟動",
+      "UndoLabel": "啟用快速啟動",
+      "ApplyUndoText": "正在啟用快速啟動"
+    },
+    "DisableBitlockerAutoEncryption": {
+      "Label": "停用 BitLocker 自動裝置加密",
+      "ToolTip": "對於支援的裝置，Windows 11 會自動啟用 BitLocker 裝置加密。停用此功能將關閉裝置的自動加密，但您仍可手動啟用 BitLocker 加密。已使用 BitLocker 加密的磁碟機在套用此設定後仍將保持加密狀態。",
+      "ApplyText": "正在停用 BitLocker 自動裝置加密",
+      "UndoLabel": "啟用 BitLocker 自動裝置加密",
+      "ApplyUndoText": "正在啟用 BitLocker 自動裝置加密"
+    },
+    "DisableModernStandbyNetworking": {
+      "Label": "停用新式待命網路連線",
+      "ToolTip": "預設情況下，支援新式待命的裝置在睡眠模式下保持網路連線。在新式待任期間停用網路連線有助於節省電池電量。",
+      "ApplyText": "正在停用新式待任期間的網路連線",
+      "UndoLabel": "啟用新式待命網路連線",
+      "ApplyUndoText": "正在啟用新式待任期間的網路連線"
+    },
+    "EnableEndTask": {
+      "Label": "在工作列右鍵功能表中顯示「結束工作」選項",
+      "ToolTip": "啟用後，在工作列中右鍵點擊應用程式時新增「結束工作」選項，可快速強制關閉應用程式。",
+      "ApplyText": "正在啟用工作列右鍵功能表中的「結束工作」選項",
+      "UndoLabel": "隱藏工作列右鍵功能表中的「結束工作」選項",
+      "ApplyUndoText": "正在停用工作列右鍵功能表中的「結束工作」選項"
+    },
+    "EnableLastActiveClick": {
+      "Label": "為工作列應用程式啟用「最後活動點擊」行為",
+      "ToolTip": "啟用後，點擊工作列中的應用程式將切換到該應用程式的最後活動視窗，而不是僅顯示縮圖預覽。",
+      "ApplyText": "正在啟用工作列應用程式區域的「最後活動點擊」行為",
+      "UndoLabel": "停用工作列應用程式的「最後活動點擊」行為",
+      "ApplyUndoText": "正在停用工作列應用程式區域的「最後活動點擊」行為"
+    },
+    "CombineTaskbarAlways": {
+      "Label": "始終合併主顯示器上的工作列按鈕並隱藏標籤",
+      "ApplyText": "正在將主顯示器工作列設定為始終合併按鈕並隱藏標籤"
+    },
+    "CombineMMTaskbarAlways": {
+      "Label": "始終合併副顯示器上的工作列按鈕並隱藏標籤",
+      "ApplyText": "正在將副顯示器工作列設定為始終合併按鈕並隱藏標籤"
+    },
+    "CombineTaskbarWhenFull": {
+      "Label": "主顯示器工作列滿時合併工作列按鈕並隱藏標籤",
+      "ApplyText": "正在將主顯示器工作列設定為僅在滿時合併按鈕並隱藏標籤",
+      "UndoLabel": "始終合併主顯示器上的工作列按鈕並隱藏標籤",
+      "ApplyUndoText": "正在將主顯示器工作列設定為始終合併按鈕並隱藏標籤"
+    },
+    "CombineMMTaskbarWhenFull": {
+      "Label": "副顯示器工作列滿時合併工作列按鈕並隱藏標籤",
+      "ApplyText": "正在將副顯示器工作列設定為僅在滿時合併按鈕並隱藏標籤",
+      "UndoLabel": "始終合併副顯示器上的工作列按鈕並隱藏標籤",
+      "ApplyUndoText": "正在將副顯示器工作列設定為始終合併按鈕並隱藏標籤"
+    },
+    "CombineTaskbarNever": {
+      "Label": "從不合併主顯示器上的工作列按鈕並顯示標籤",
+      "ApplyText": "正在將主顯示器工作列設定為從不合併按鈕或隱藏標籤",
+      "UndoLabel": "始終合併主顯示器上的工作列按鈕並隱藏標籤",
+      "ApplyUndoText": "正在將主顯示器工作列設定為始終合併按鈕並隱藏標籤"
+    },
+    "CombineMMTaskbarNever": {
+      "Label": "從不合併副顯示器上的工作列按鈕並顯示標籤",
+      "ApplyText": "正在將副顯示器工作列設定為從不合併按鈕或隱藏標籤",
+      "UndoLabel": "始終合併副顯示器上的工作列按鈕並隱藏標籤",
+      "ApplyUndoText": "正在將副顯示器工作列設定為始終合併按鈕並隱藏標籤"
+    },
+    "MMTaskbarModeAll": {
+      "Label": "在所有工作列上顯示應用程式圖示",
+      "ApplyText": "正在將工作列設定為在所有工作列上顯示應用程式圖示"
+    },
+    "MMTaskbarModeMainActive": {
+      "Label": "在主工作列和視窗所在工作列上顯示應用程式圖示",
+      "ApplyText": "正在將工作列設定為在主工作列和視窗所在工作列上顯示應用程式圖示",
+      "UndoLabel": "在所有工作列上顯示應用程式圖示",
+      "ApplyUndoText": "正在將工作列設定為在所有工作列上顯示應用程式圖示"
+    },
+    "MMTaskbarModeActive": {
+      "Label": "僅在視窗所在工作列上顯示應用程式圖示",
+      "ApplyText": "正在將工作列設定為僅在視窗所在工作列上顯示應用程式圖示",
+      "UndoLabel": "在所有工作列上顯示應用程式圖示",
+      "ApplyUndoText": "正在將工作列設定為在所有工作列上顯示應用程式圖示"
+    },
+    "ExplorerToHome": {
+      "Label": "將檔案總管預設開啟位置改為「首頁」",
+      "ApplyText": "正在將檔案總管預設開啟位置改為「首頁」"
+    },
+    "ExplorerToThisPC": {
+      "Label": "將檔案總管預設開啟位置改為「本機」",
+      "ApplyText": "正在將檔案總管預設開啟位置改為「本機」",
+      "UndoLabel": "將檔案總管預設開啟位置改為「首頁」",
+      "ApplyUndoText": "正在將檔案總管預設開啟位置改為「首頁」"
+    },
+    "ExplorerToDownloads": {
+      "Label": "將檔案總管預設開啟位置改為「下載」",
+      "ApplyText": "正在將檔案總管預設開啟位置改為「下載」",
+      "UndoLabel": "將檔案總管預設開啟位置改為「首頁」",
+      "ApplyUndoText": "正在將檔案總管預設開啟位置改為「首頁」"
+    },
+    "ExplorerToOneDrive": {
+      "Label": "將檔案總管預設開啟位置改為「OneDrive」",
+      "ApplyText": "正在將檔案總管預設開啟位置改為「OneDrive」",
+      "UndoLabel": "將檔案總管預設開啟位置改為「首頁」",
+      "ApplyUndoText": "正在將檔案總管預設開啟位置改為「首頁」"
+    },
+    "ShowKnownFileExt": {
+      "Label": "顯示已知檔案類型的副檔名",
+      "ToolTip": "這將顯示已知檔案類型的副檔名。預設情況下，Windows 隱藏已知檔案類型的副檔名，這可能導致混淆和安全風險。",
+      "ApplyText": "正在啟用已知檔案類型的副檔名",
+      "UndoLabel": "隱藏已知檔案類型的副檔名",
+      "ApplyUndoText": "正在停用已知檔案類型的副檔名"
+    },
+    "ShowHiddenFolders": {
+      "Label": "顯示隱藏的檔案、資料夾和磁碟機",
+      "ToolTip": "預設情況下，Windows 隱藏某些檔案、資料夾和磁碟機以防止意外修改或刪除。開啟此項可在檔案總管中顯示所有檔案。",
+      "ApplyText": "正在取消隱藏檔案、資料夾和磁碟機",
+      "UndoLabel": "隱藏隱藏的檔案、資料夾和磁碟機",
+      "ApplyUndoText": "正在隱藏檔案、資料夾和磁碟機"
+    },
+    "HideDupliDrive": {
+      "Label": "隱藏重複的可移除磁碟機項目",
+      "ToolTip": "預設情況下，Windows 在「本機」下和導覽窗格中各自項目下都顯示可移除磁碟機。啟用此設定可僅在「本機」下顯示可移除磁碟機。",
+      "ApplyText": "正在從檔案總管導覽窗格隱藏重複的可移除磁碟機項目",
+      "UndoLabel": "顯示重複的可移除磁碟機項目",
+      "ApplyUndoText": "正在從檔案總管導覽窗格顯示重複的可移除磁碟機項目"
+    },
+    "HideHome": {
+      "Label": "從導覽窗格隱藏「首頁」",
+      "ToolTip": "從檔案總管導覽窗格隱藏「首頁」部分。警告：這可能導致快速存取連結在重新啟動電腦或 Windows 檔案總管之前無法更新。",
+      "ApplyText": "正在從檔案總管導覽窗格隱藏「首頁」部分",
+      "UndoLabel": "在導覽窗格顯示「首頁」",
+      "ApplyUndoText": "正在從檔案總管導覽窗格顯示「首頁」部分"
+    },
+    "HideGallery": {
+      "Label": "從導覽窗格隱藏「圖庫」",
+      "ToolTip": "從檔案總管導覽窗格隱藏「圖庫」部分。",
+      "ApplyText": "正在從檔案總管導覽窗格隱藏「圖庫」部分",
+      "UndoLabel": "在導覽窗格顯示「圖庫」",
+      "ApplyUndoText": "正在從檔案總管導覽窗格顯示「圖庫」部分"
+    },
+    "DisableTransparency": {
+      "Label": "停用透明效果",
+      "ToolTip": "這將停用 Windows 和介面上的透明效果，有助於在舊硬體上提升效能。",
+      "ApplyText": "正在停用透明效果",
+      "UndoLabel": "啟用透明效果",
+      "ApplyUndoText": "正在啟用透明效果"
+    },
+    "DisableAnimations": {
+      "Label": "停用動畫和視覺效果",
+      "ToolTip": "這將停用 Windows 中的動畫和部分視覺效果，可使介面回應更靈敏，尤其是在舊硬體上。",
+      "ApplyText": "正在停用動畫和視覺效果",
+      "UndoLabel": "啟用動畫和視覺效果",
+      "ApplyUndoText": "正在啟用動畫和視覺效果"
+    },
+    "DisableUpdateASAP": {
+      "Label": "阻止在更新可用後立即取得",
+      "ToolTip": "這將阻止您的電腦成為首批接收新非安全更新的裝置。您的電腦最終仍會收到這些更新。",
+      "ApplyText": "正在阻止 Windows 在更新可用後立即取得",
+      "UndoLabel": "允許在更新可用後立即取得",
+      "ApplyUndoText": "正在允許 Windows 在更新可用後立即取得"
+    },
+    "PreventUpdateAutoReboot": {
+      "Label": "阻止登入期間更新後自動重新啟動",
+      "ToolTip": "這將阻止電腦在任何使用者登入期間於更新後自動重新啟動。",
+      "ApplyText": "正在阻止登入期間更新後自動重新啟動",
+      "UndoLabel": "允許登入期間更新後自動重新啟動",
+      "ApplyUndoText": "正在允許登入期間更新後自動重新啟動"
+    },
+    "DisableDeliveryOptimization": {
+      "Label": "停用與其他電腦共用已下載的更新",
+      "ToolTip": "這將阻止您的電腦與區域網路或網際網路上的其他電腦共用已下載的更新，也阻止您的電腦從其他電腦下載更新。",
+      "ApplyText": "正在停用與其他電腦共用已下載的更新",
+      "UndoLabel": "啟用與其他電腦共用已下載的更新",
+      "ApplyUndoText": "正在啟用與其他電腦共用已下載的更新"
+    },
+    "DisableDeviceAutoAppDownload": {
+      "Label": "阻止 Windows 自動安裝裝置配套應用程式",
+      "ToolTip": "阻止 Windows 在連接某些裝置（如 LG 和 Alienware 顯示器）時透過 Windows Update 靜默安裝裝置配套應用程式。這些裝置仍將正常運作，此設定僅阻止 Windows Update 未經同意自動安裝額外應用程式。",
+      "ApplyText": "正在阻止自動安裝裝置配套應用程式",
+      "UndoLabel": "允許自動安裝裝置配套應用程式",
+      "ApplyUndoText": "正在允許自動安裝裝置配套應用程式"
+    },
+    "ForceRemoveEdge": {
+      "Label": "強制解除安裝 Microsoft Edge。不推薦！",
+      "ApplyText": "正在強制解除安裝 Microsoft Edge"
+    },
+    "HideOnedrive": {
+      "Label": "從導覽窗格隱藏「OneDrive」",
+      "ToolTip": "從檔案總管導覽窗格隱藏「OneDrive」部分。",
+      "ApplyText": "正在從檔案總管導覽窗格隱藏「OneDrive」部分",
+      "UndoLabel": "在導覽窗格顯示「OneDrive」",
+      "ApplyUndoText": "正在從檔案總管導覽窗格顯示「OneDrive」部分"
+    },
+    "Hide3dObjects": {
+      "Label": "隱藏「本機」下的「3D 物件」資料夾",
+      "ToolTip": "從檔案總管導覽窗格隱藏「3D 物件」資料夾。",
+      "ApplyText": "正在從檔案總管導覽窗格隱藏「3D 物件」資料夾",
+      "UndoLabel": "顯示「本機」下的「3D 物件」資料夾",
+      "ApplyUndoText": "正在從檔案總管導覽窗格顯示「3D 物件」資料夾"
+    },
+    "HideMusic": {
+      "Label": "隱藏「本機」下的「音樂」資料夾",
+      "ToolTip": "從檔案總管導覽窗格隱藏「音樂」資料夾。",
+      "ApplyText": "正在從檔案總管導覽窗格隱藏「音樂」資料夾",
+      "UndoLabel": "顯示「本機」下的「音樂」資料夾",
+      "ApplyUndoText": "正在從檔案總管導覽窗格顯示「音樂」資料夾"
+    },
+    "AddFoldersToThisPC": {
+      "Label": "將常用資料夾新增回「本機」頁面",
+      "ToolTip": "此設定會將桌面、文件、下載、音樂、圖片和影片等常用資料夾新增回檔案總管中的「本機」頁面。",
+      "ApplyText": "正在將所有常用資料夾（桌面、下載等）新增回檔案總管的「本機」",
+      "UndoLabel": "從「本機」頁面移除常用資料夾",
+      "ApplyUndoText": "正在從檔案總管的「本機」移除所有常用資料夾（桌面、下載等）"
+    },
+    "HideIncludeInLibrary": {
+      "Label": "隱藏右鍵功能表中的「包含至媒體櫃」選項",
+      "ToolTip": "從檔案總管右鍵功能表隱藏「包含至媒體櫃」選項。",
+      "ApplyText": "正在隱藏右鍵功能表中的「包含至媒體櫃」",
+      "UndoLabel": "顯示右鍵功能表中的「包含至媒體櫃」選項",
+      "ApplyUndoText": "正在顯示右鍵功能表中的「包含至媒體櫃」"
+    },
+    "HideGiveAccessTo": {
+      "Label": "隱藏右鍵功能表中的「授與存取權」選項",
+      "ToolTip": "從檔案總管右鍵功能表隱藏「授與存取權」選項。",
+      "ApplyText": "正在隱藏右鍵功能表中的「授與存取權」",
+      "UndoLabel": "顯示右鍵功能表中的「授與存取權」選項",
+      "ApplyUndoText": "正在顯示右鍵功能表中的「授與存取權」"
+    },
+    "HideShare": {
+      "Label": "隱藏右鍵功能表中的「共用」選項",
+      "ToolTip": "從檔案總管右鍵功能表隱藏「共用」選項。",
+      "ApplyText": "正在隱藏右鍵功能表中的「共用」",
+      "UndoLabel": "顯示右鍵功能表中的「共用」選項",
+      "ApplyUndoText": "正在顯示右鍵功能表中的「共用」"
+    },
+    "DisableBraveBloat": {
+      "Label": "停用 Brave 瀏覽器中的冗餘功能（AI、加密貨幣等）",
+      "ToolTip": "這將停用 Brave 內建的 AI 功能、加密貨幣錢包、新聞、獎勵、Talk 和 VPN。此功能使用原則，將鎖定某些設定。",
+      "ApplyText": "正在停用 Brave 瀏覽器中的 AI、加密貨幣、新聞、獎勵、Talk 和 VPN",
+      "UndoLabel": "啟用 Brave 瀏覽器功能（AI、加密貨幣等）",
+      "ApplyUndoText": "正在啟用 Brave 瀏覽器中的 AI、加密貨幣、新聞、獎勵、Talk 和 VPN"
+    },
+    "EnableWindowsSandbox": {
+      "Label": "啟用 Windows 沙箱",
+      "ToolTip": "Windows 沙箱是一個輕量級桌面環境，用於安全地隔離執行應用程式。在 Windows 沙箱環境中安裝的軟體保持「沙箱化」，與主機分開執行。僅支援 Windows 11 專業版、工作站版和企業版。",
+      "ApplyText": "正在啟用 Windows 沙箱",
+      "UndoLabel": "停用 Windows 沙箱",
+      "ApplyUndoText": "正在停用 Windows 沙箱"
+    },
+    "EnableWindowsSubsystemForLinux": {
+      "Label": "啟用適用於 Linux 的 Windows 子系統",
+      "ToolTip": "適用於 Linux 的 Windows 子系統允許您直接在 Windows 上執行 Linux 環境，無需虛擬機。",
+      "ApplyText": "正在啟用適用於 Linux 的 Windows 子系統",
+      "UndoLabel": "停用適用於 Linux 的 Windows 子系統",
+      "ApplyUndoText": "正在停用適用於 Linux 的 Windows 子系統"
+    },
+    "ShowDriveLettersFirst": {
+      "Label": "在磁碟機標籤前顯示磁碟機代號",
+      "ToolTip": "此設定將在檔案總管中磁碟機標籤前顯示磁碟機代號。",
+      "ApplyText": "正在在磁碟機標籤前顯示磁碟機代號",
+      "UndoLabel": "在磁碟機標籤後顯示磁碟機代號",
+      "ApplyUndoText": "正在在磁碟機標籤後顯示磁碟機代號"
+    },
+    "ShowDriveLettersLast": {
+      "Label": "在磁碟機標籤後顯示磁碟機代號",
+      "ToolTip": "此設定將在檔案總管中磁碟機標籤後顯示磁碟機代號（Windows 預設行為）。",
+      "ApplyText": "正在在磁碟機標籤後顯示磁碟機代號"
+    },
+    "ShowNetworkDriveLettersFirst": {
+      "Label": "在磁碟機標籤前顯示網路磁碟機代號",
+      "ToolTip": "此設定將在檔案總管中僅網路磁碟機標籤前顯示網路磁碟機代號。",
+      "ApplyText": "正在在磁碟機標籤前顯示網路磁碟機代號",
+      "UndoLabel": "在磁碟機標籤後顯示磁碟機代號",
+      "ApplyUndoText": "正在在磁碟機標籤後顯示磁碟機代號"
+    },
+    "HideDriveLetters": {
+      "Label": "隱藏所有磁碟機代號",
+      "ToolTip": "此設定將在檔案總管導覽窗格和「本機」中隱藏所有磁碟機代號。",
+      "ApplyText": "正在隱藏所有磁碟機代號",
+      "UndoLabel": "在磁碟機標籤後顯示磁碟機代號",
+      "ApplyUndoText": "正在在磁碟機標籤後顯示磁碟機代號"
+    },
+    "StartAllAppsCategory": {
+      "Label": "按分類檢視顯示所有應用程式（預設）",
+      "ToolTip": "這將設定開始功能表中的「所有應用程式」部分按分類分組顯示應用程式。",
+      "ApplyText": "正在將「所有應用程式」檢視設定為分類"
+    },
+    "StartAllAppsGrid": {
+      "Label": "按網格檢視顯示所有應用程式",
+      "ToolTip": "這將設定開始功能表中的「所有應用程式」部分以字母順序網格版面配置顯示應用程式。",
+      "ApplyText": "正在將「所有應用程式」檢視設定為網格",
+      "UndoLabel": "按分類檢視顯示所有應用程式",
+      "ApplyUndoText": "正在將「所有應用程式」檢視設定為分類"
+    },
+    "StartAllAppsList": {
+      "Label": "按清單檢視顯示所有應用程式",
+      "ToolTip": "這將設定開始功能表中的「所有應用程式」部分以字母順序清單版面配置顯示應用程式。",
+      "ApplyText": "正在將「所有應用程式」檢視設定為清單",
+      "UndoLabel": "按分類檢視顯示所有應用程式",
+      "ApplyUndoText": "正在將「所有應用程式」檢視設定為分類"
+    }
+  },
+  "UiGroups": {
+    "DesktopSpotlight": {
+      "Label": "桌面上的 Windows 聚光燈",
+      "ToolTip": "此設定控制 Windows 聚光燈桌布背景選項。保留輪替桌布（帶或不帶「了解此圖片」捷徑），或完全停用 Windows 聚光燈。",
+      "Values": {
+        "EnableDesktopSpotlight": "顯示「了解此圖片」捷徑（預設）",
+        "HideDesktopSpotlightIcon": "隱藏「了解此圖片」捷徑",
+        "DisableDesktopSpotlight": "停用 Windows 聚光燈桌布背景"
+      }
+    },
+    "SearchIcon": {
+      "Label": "工作列搜尋樣式",
+      "ToolTip": "此設定允許您自訂工作列上搜尋框的外觀。",
+      "Values": {
+        "ShowSearchBoxTb": "顯示搜尋框（預設）",
+        "ShowSearchLabelTb": "顯示搜尋圖示和標籤",
+        "ShowSearchIconTb": "僅顯示搜尋圖示",
+        "HideSearchTb": "隱藏"
+      }
+    },
+    "MultiMon": {
+      "Label": "在以下位置顯示工作列應用程式",
+      "ToolTip": "此設定允許您選擇使用多個顯示器時工作列應用程式按鈕的顯示位置。",
+      "Values": {
+        "MMTaskbarModeAll": "所有工作列（預設）",
+        "MMTaskbarModeMainActive": "主工作列和視窗所在工作列",
+        "MMTaskbarModeActive": "視窗所在工作列"
+      }
+    },
+    "CombineButtons": {
+      "Label": "合併主顯示器上的工作列按鈕",
+      "ToolTip": "此設定允許您選擇主顯示器上工作列按鈕的合併方式。",
+      "Values": {
+        "CombineTaskbarAlways": "始終（預設）",
+        "CombineTaskbarWhenFull": "工作列滿時",
+        "CombineTaskbarNever": "從不"
+      }
+    },
+    "CombineMMButtons": {
+      "Label": "合併副顯示器上的工作列按鈕",
+      "ToolTip": "此設定允許您選擇副顯示器上工作列按鈕的合併方式。",
+      "Values": {
+        "CombineMMTaskbarAlways": "始終（預設）",
+        "CombineMMTaskbarWhenFull": "工作列滿時",
+        "CombineMMTaskbarNever": "從不"
+      }
+    },
+    "ClearStart": {
+      "Label": "移除開始功能表中的固定應用程式",
+      "ToolTip": "此設定允許您快速移除開始功能表中的所有固定應用程式。",
+      "Values": {
+        "ClearStart": "為所選使用者移除",
+        "ClearStartAllUsers": "為所有使用者移除"
+      }
+    },
+    "ExplorerLocation": {
+      "Label": "檔案總管開啟至",
+      "ToolTip": "此設定允許您選擇檔案總管的預設開啟位置。",
+      "Values": {
+        "ExplorerToHome": "首頁（預設）",
+        "ExplorerToThisPC": "本機",
+        "ExplorerToDownloads": "下載",
+        "ExplorerToOneDrive": "OneDrive"
+      }
+    },
+    "DriveLetterPosition": {
+      "Label": "磁碟機代號位置",
+      "ToolTip": "此設定允許您選擇檔案總管中磁碟機代號的顯示位置。",
+      "Values": {
+        "ShowDriveLettersLast": "在磁碟機標籤後顯示磁碟機代號（預設）",
+        "ShowDriveLettersFirst": "在磁碟機標籤前顯示磁碟機代號",
+        "ShowNetworkDriveLettersFirst": "在磁碟機標籤前顯示網路磁碟機代號",
+        "HideDriveLetters": "隱藏所有磁碟機代號"
+      }
+    },
+    "ShowTabsInAltTab": {
+      "Label": "在貼齊或按 Alt+Tab 時顯示應用程式分頁",
+      "ToolTip": "此設定允許您選擇貼齊視窗或按 Alt+Tab 時是否顯示應用程式分頁（如 Edge 瀏覽器分頁）。",
+      "Values": {
+        "HideTabsInAltTab": "不顯示分頁",
+        "Show3TabsInAltTab": "顯示 3 個最近分頁（預設）",
+        "Show5TabsInAltTab": "顯示 5 個最近分頁",
+        "Show20TabsInAltTab": "顯示 20 個最近分頁"
+      }
+    },
+    "StartAllAppsView": {
+      "Label": "開始功能表「所有應用程式」檢視",
+      "ToolTip": "此設定允許您變更開始功能表中「所有應用程式」部分的版面配置，或完全隱藏它。隱藏此部分可能使尋找已安裝應用程式變得困難。此功能使用原則，將鎖定某些設定。",
+      "Values": {
+        "DisableStartAllApps": "隱藏",
+        "StartAllAppsCategory": "分類（預設）",
+        "StartAllAppsGrid": "網格",
+        "StartAllAppsList": "清單"
+      }
+    }
+  }
+}

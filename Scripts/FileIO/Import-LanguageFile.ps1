@@ -148,8 +148,9 @@ function Get-PluralCategory {
 
             return 'other'
         }
-        # Japanese CLDR rule: no grammatical plural, every count is 'other'.
-        'ja' {
+        # Chinese CLDR rule: no singular/plural distinction, always 'other'.
+        # Correct for zh-Hans (Simplified) and zh-Hant (Traditional).
+        'zh' {
             return 'other'
         }
         # English CLDR rule: singular only for exactly 1, plural otherwise. Also correct for Dutch/German.
