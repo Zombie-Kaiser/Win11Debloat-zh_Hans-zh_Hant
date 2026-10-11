@@ -104,6 +104,9 @@ function Extract-Payload {
 Write-Host 'Extracting Win11Debloat files...' -ForegroundColor Cyan
 Extract-Payload -TargetDir `$extractDir
 
+# Bypass execution policy for this process only (some systems restrict script execution)
+Set-ExecutionPolicy Bypass -Scope Process -Force -ErrorAction SilentlyContinue
+
 # Pass through all arguments to the main script
 `$scriptPath = Join-Path `$extractDir 'Win11Debloat.ps1'
 if (-not (Test-Path `$scriptPath)) {
