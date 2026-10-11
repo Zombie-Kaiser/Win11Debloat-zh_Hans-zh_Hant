@@ -1,3 +1,24 @@
 LastUsedSettings.json
 Logs/*
 Backups/*
+
+# Build artifacts
+Win11Debloat.exe
+Win11Debloat.exe.config
+*.pdb
+
+# IDE / Editor
+.codeartsdoer/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temp
+*.tmp
+*.bak
